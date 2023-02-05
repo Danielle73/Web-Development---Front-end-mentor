@@ -20,11 +20,22 @@
 
 html,body{
     font-family: 'Overpass', sans-serif;
+    font-size: 15px;
     background-color: var(--veryDarkBlue);
     color: var(--white);
 }
 
-h1{
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 2rem;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+h1, h2{
     font-weight: 400;
 }
 
@@ -49,6 +60,10 @@ p {
     margin: auto;
     padding: 20px;
    }
+
+.hidden{
+    display: none;
+}
 
 .card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -77,6 +92,7 @@ border-radius: 30px;
 border-style: none;
 color: var(--white);
 cursor: pointer;
+font-family: inherit;
 font-variant: small-caps;
 letter-spacing: 2px;
 text-align: center;
@@ -106,10 +122,12 @@ input[type=radio]{
     justify-content: space-evenly;
     flex-wrap: wrap;
     text-align: center;
-    /* padding: 1rem;
+    /* padding-top: 0.2rem; */
     /* margin-top: 2rem;
     border-radius: 2rem; */ 
 }
+
+
 
 .opt{
     display: block;
@@ -124,14 +142,18 @@ input[type=radio]{
     cursor: pointer;
 }
 
-.opt:active{
+/* .opt:active{
   box-shadow: 0 5px --veryDarkBlue;
   transform: translateY(4px);
-}
+} */
 
 .opt:hover{
     background-color: var(--orange);
     color: var(--white);
+}
+
+.opt:focus{
+    background-color: var(--lightGrey);
 }
 
 /*Second card*/
