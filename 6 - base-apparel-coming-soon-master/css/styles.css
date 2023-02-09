@@ -1,0 +1,28 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+}
+
+.main-container{
+    display: flex;
+    background-image: url("/images/bg-pattern-desktop.svg");
+}
+
+.content{
+    margin: auto;
+    padding: 0 150px 0 150px;
+}
+
+#email {
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#girl-img {
+    max-height: 700px;
+    max-width: 600px;
+}
