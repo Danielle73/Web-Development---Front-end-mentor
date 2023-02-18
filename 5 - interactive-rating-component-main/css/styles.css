@@ -2,6 +2,8 @@
 
 *{
     box-sizing: border-box;
+    /* margin: 0;  
+    padding: 0; */
 }
 :root {
     --orange: hsl(25, 97%, 53%);
@@ -45,21 +47,13 @@ p {
     color: var(--lightGrey);
 }
 
-.main-container{
+.main-container, .second-container{
  display: flex;
  justify-content: center;
  align-items: center;
  flex-flow: column wrap; 
+ margin-top: 150px;
 }
-
-.second-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap; 
-    margin: auto;
-    padding: 20px;
-   }
 
 .hidden{
     display: none;
@@ -127,8 +121,6 @@ input[type=radio]{
     border-radius: 2rem; */ 
 }
 
-
-
 .opt{
     display: block;
     position: relative;
@@ -142,10 +134,10 @@ input[type=radio]{
     cursor: pointer;
 }
 
-/* .opt:active{
-  box-shadow: 0 5px --veryDarkBlue;
+.opt:active{
+  /* box-shadow: 0 5px var(--veryDarkBlue); */
   transform: translateY(4px);
-} */
+}
 
 .opt:hover{
     background-color: var(--orange);
